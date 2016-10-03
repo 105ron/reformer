@@ -1,4 +1,5 @@
-<h1>Sign up</h1>
+<h1>Edit</h1>
+<%= form_for @user do |f| %>
 <%= form_for @user do |f| %>
 	<%= f.label :name, 'Enter a username:' %>
   <%= f.text_field :name, placeholder: "Your name here" %><br>
@@ -9,6 +10,8 @@
   <%= f.submit "Submit" %>
 <% end %>
 
+
+<% end %>
 
 <!--rubycode #form_tag('/users') /rubycode
 Username: rubycode #text_field_tag 'name' /rubycode<br>
